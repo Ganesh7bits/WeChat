@@ -1,0 +1,251 @@
+.chat{
+    flex: 2;
+    border-left: 3px solid #091f36;
+    border-right: 3px solid #091f36;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.top{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #091f36;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.texts span{
+    font-weight: 600;
+
+}
+.texts p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.icons{
+    display: flex;
+    gap: 1.1rem;
+ }
+.icons img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.center{
+    padding: 20px;
+    float: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+/* Scrollbar container */
+.center::-webkit-scrollbar {
+    width: 5px; /* Adjust the width to your preference */
+}
+
+/* Scrollbar thumb */
+.center::-webkit-scrollbar-thumb {
+    background: #0256af; /* Change this to your desired color */
+}
+
+.message{
+    max-width: 70%;
+    display: flex;
+    gap: 20px;
+}
+.message img{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    object-fit: cover;
+
+}
+.ourmessage{
+    align-self: flex-end;
+    max-width: 70%;
+    display: flex;
+    gap: 20px;
+}
+.ourmessage img{
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ourmessage p{
+   background-color:  rgba(40, 35, 183, 0.7);
+   padding: 5px;
+   border-radius: 10px;
+   display: inline-block; 
+   width: 100%;
+   height: 100%;
+}
+.ourmessage p span{
+    font-size: 10px;
+    
+
+}
+
+.mgtexts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 22px;
+
+}
+.message p{
+    position: relative;
+    padding: 5px;
+    background-color: rgba(60, 5, 50, 0.2);
+    border-radius: 10px;
+    
+}
+
+.message p span{
+    font-size: 10px;
+    position: "bottom-left";
+
+}
+.bottom{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #dddddd35;
+    gap: 20px;
+    margin-top: auto;
+
+}
+
+.input{
+    flex: 1;
+    width: 60%;
+    background: rgba(17, 25, 40, 0.5);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.emoji{
+    position: relative;
+    width: 5%;
+}
+.picker{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+}
+.emoji img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.sendbtn{
+    width: 15%;
+    max-width: 60px;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #5183fe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* Chat.module.css */
+.backButton {
+    display: none;
+  }
+  .backBtnBox{
+    display: none;
+    width: 10%;
+
+}
+ @media screen and (max-width: 1100px) and  (min-width: 831px){
+   .top .icons{
+    flex-direction: column;
+    align-items:end;
+    gap: 0.1rem;
+
+   }
+ }
+  
+  @media screen and (max-width: 830px) {
+    .backBtnBox{
+        display: flex;
+        width: 10%;
+
+    }
+    .backButton {
+        color: #ffffff; 
+        display: flex;
+        padding: 10px;
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+        border: 0px ; 
+        background-color: transparent;
+        background-image: url("/back.png");
+        background-size: cover; /* Ensure the background image covers the entire button */
+        background-position: center; /* Center the background image */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+    
+    .backButton:hover {
+        background-color: #95294d; /* Change background color on hover */
+        box-shadow: 0 6px 8px rgba(233, 30, 99, 0.3), 
+                    0 4px 6px rgba(233, 30, 99, 0.3);
+    }
+    
+    .chat{
+        flex: 2;
+        border-left: 3px solid #091f36;
+        border-right: 3px solid #091f36;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
+    
+  }
+  @media screen and (max-width: 450px) {
+   
+    .backButton{
+        width: 50px;
+        height: 30px;
+    }
+
+  }
+  

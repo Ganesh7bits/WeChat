@@ -1,0 +1,151 @@
+.details{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+.user{
+    height: 25%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom:1px solid #dddddd35;
+}
+.user img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.info{
+    height: 75%;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title img{
+    width: 1rem;
+    height: 1rem;
+    background: rgba(17, 25, 40, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.font_size_box{
+    display: flex;
+    padding: 0.3rem;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+}
+.font_size_box span{
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 10%;
+
+
+}
+.font_size_box button{
+    font-weight: 800;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+}
+
+.photos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.photoItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photoDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.photoDetails span {
+    font-size: 14px;
+    color: lightgray;
+    font-weight: 300px;
+}
+.dwicons{
+    width: 1rem;
+    height: 1rem;
+    background-color:rgba(17, 25, 40, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.photoDetails img{
+    width: 1rem;
+    height: 1rem;
+    background: rgba(17, 25, 40, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.blockBtn{
+    padding: 0.3rem;
+    width: auto;
+    background-color: rgba(230, 74, 105, 0.553);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.blockBtn:hover{
+    background-color: rgba(220, 20, 60, 0.796);
+}
+.logOutBtn{
+    padding: 0.3rem;
+    background-color: #1a72e8;
+}
+
+.backButton {
+    color: #ffffff; 
+    display: flex;
+    padding: 10px;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0px ; 
+    background-color: transparent;
+    background-image: url("/back.png");
+    background-size: cover; /* Ensure the background image covers the entire button */
+    background-position: center; /* Center the background image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.backButton:hover {
+    background-color: #95294d; /* Change background color on hover */
+    box-shadow: 0 6px 8px rgba(233, 30, 99, 0.3), 
+                0 4px 6px rgba(233, 30, 99, 0.3);
+}
+.blockedStatus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: bold;
+    color: red;
+    font-size: 22px;
+}

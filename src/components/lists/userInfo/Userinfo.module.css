@@ -1,0 +1,40 @@
+.userinfo{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.userimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+ .icons{
+    display: flex;
+    gap: 10px;
+ }
+.icons img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.logoutButton{
+        color: #ffffff; 
+        display: flex;
+        padding: 10px;
+        width: 30px;
+        height: 40px;
+        object-fit: cover;
+        border: 0px ; 
+        background-color: rgba(125, 65, 189, 0.2);
+        background-image: url("/logout.png");
+        background-size: cover; /* Ensure the background image covers the entire button */
+        background-position: center; /* Center the background image */
+        cursor: pointer; /* Change cursor to pointer on hover */
+}

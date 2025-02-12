@@ -1,0 +1,102 @@
+.chatlist{
+    flex: 1;
+    overflow-y: scroll;
+   
+}
+/* Scrollbar container */
+.chatlist::-webkit-scrollbar {
+    width: 12px; /* Adjust the width to your preference */
+}
+
+/* Scrollbar thumb */
+.chatlist::-webkit-scrollbar-thumb {
+    background: #888; /* Change this to your desired color */
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.searchbar{
+    flex: 1;
+    background-color: rgba(17, 25, 40, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.searchbar input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+    
+}
+.searchbar img{
+    width: 20px;
+    height: 20px;
+
+}
+.add{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(17, 25, 40, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 3px solid #091f36;
+}
+.item img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.texts span{
+    font-weight: 600;
+
+}
+.texts p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.dltbtndiv{
+   align-items: end;
+   position: absolute;
+   right: 10px;
+
+}
+.dltChatBtn{
+   
+    color: #ffffff; 
+    display: flex;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0px ; 
+    background-color: transparent;
+    background-image: url("/delete.png");
+    background-size: cover; /* Ensure the background image covers the entire button */
+    background-position: center; /* Center the background image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}

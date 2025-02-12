@@ -1,0 +1,53 @@
+.container
+{
+  width: 100vw;
+  height: 100vh;
+  color: aliceblue;
+  /* background-color: #0f2862; */
+  background-image: linear-gradient(-135deg, rgb(170, 28, 144) 5%, 
+  #0f2862 80%, #0f2862 80%);
+  
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255,255,0.125);
+  display: flex;
+}
+
+/* App.module.css */
+.listsContainer {
+  display: block;
+  width: 100%;
+}
+
+.chatContainer {
+  display: none;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 831px) {
+  .listsContainer {
+    width: 30%; /* Adjust as necessary for layout */
+  }
+
+  .chatContainer {
+    width: 70%; /* Adjust as necessary for layout */
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
